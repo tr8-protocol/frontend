@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Button, ChakraProvider, Container, Flex, Heading, Image, Link, Text } from '@chakra-ui/react';
 import logo from './Logo (1).png'
+import image from './Section1.png'
 
 const LandingPage = () => {
   return (
@@ -13,8 +14,8 @@ const LandingPage = () => {
           </Box>
           <Flex>
             <Link href="#">About</Link>
-            <Link ml={4} href="#">My TR8s</Link>
-            <Button ml={4} colorScheme="whiteAlpha">Create a TR8</Button>
+            <Link ml={2} href="#">My TR8s</Link>
+            <Button ml={2} colorScheme="blue" color="#dd5947">Create a TR8</Button>
           </Flex>
         </Flex>
 
@@ -25,22 +26,38 @@ const LandingPage = () => {
             <Button mt={4} colorScheme="blue">Get Started</Button>
           </Box>
           <Box p={4} bg="gray.100" borderRadius="md">
-          <Image src="/path/to/hero-image.jpg" alt="Hero Image" w={400} h={300} borderRadius="md" />
+          <Image src={image} alt="Hero Image" w={400} h={300} borderRadius="md" />
           </Box>
         </Flex>
 
         <Box mt={12}>
-          <Heading size="lg">What are TR8s and How do they work?</Heading>
-          <Flex mt={4} justify="space-between" align="flex-start">
-            <Box p={4} bg="gray.100" borderRadius="md" flex="1">
-            <Box p={4} bg="gray.100" borderRadius="md">
-              <Text>TR8 - Redefining NFTs for the Future</Text>
-              <Text mt={4}>TR8 isn't just another NFT platform; it's a transformative experience that empowers you to showcase your achievements and identity in a way that's never been possible before. Our commitment to innovation, trust, and user-centricity drives us to reshape the NFT landscape. Join us on this journey as we redefine what it means to own, display, and share your digital accomplishments. TR8 - The Future of Multi-Chain NFTs is here, and it's changing the game.</Text>
+        <Heading size="lg">What are TR8s and How do they work?</Heading>
+        <Flex mt={4} justify="space-between" align="flex-start">
+          <Box p={4} bg="gray.100" borderRadius="md" flex="1">
+            <Box mb={4}>
+              <Text textAlign="left">TR8 - Redefining NFTs for the Future</Text>
+              <Text mt={4} textAlign="left">
+                TR8 isn't just another NFT platform; it's a transformative experience that empowers you to showcase your achievements and identity in a way that's never been possible before. Our commitment to innovation, trust, and user-centricity drives us to reshape the NFT landscape. Join us on this journey as we redefine what it means to own, display, and share your digital accomplishments. TR8 - The Future of Multi-Chain NFTs is here, and it's changing the game.
+              </Text>
             </Box>
-            <Text ml={4}>Text on the right</Text>
+            <Box mb={4}>
+              <Text textAlign="left">Multi-Chain Attestations: TR8 introduces a groundbreaking concept multi-chain attestations. Your achievements are seamlessly anchored on multiple blockchain networks, offering unmatched interoperability and resilience.</Text>
             </Box>
-          </Flex>
-        </Box>
+            <Box mb={4}>
+              <Text textAlign="left">Trust and Transparency: Embrace a new level of trust with TR8. Each NFT is backed by verifiable data, ensuring authenticity. Say goodbye to uncertainty and hello to transparency in the NFT world.</Text>
+            </Box>
+            <Box mb={4}>
+              <Text textAlign="left">Interconnected Identity: TR8 weaves your digital identity through real-world attestations. Whether it's an event you attended or a certificate you earned, each attestation contributes to a comprehensive narrative.</Text>
+            </Box>
+            <Box mb={4}>
+              <Text textAlign="left">Flexible Token Gating: Customize your NFT distribution with TR8's Resolver Contracts. Define conditions for attestation and minting, allowing you to host exclusive events or issue certificates with ease.</Text>
+            </Box>
+            <Box>
+              <Text textAlign="left">Native Multi-Chain Presence: TR8 goes beyond bridging chains. It natively exists on multiple chains, providing a seamless experience without compromising security. Welcome to the future of NFTs with TR8.</Text>
+            </Box>
+          </Box>
+        </Flex>
+      </Box>
 
         <Box mt={12}>
           <Heading size="lg">Use Cases of TR8: Transforming Digital Identity</Heading>
