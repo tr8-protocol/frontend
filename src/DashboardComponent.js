@@ -27,21 +27,22 @@ const DashboardComponent = ({ imageSrc, id, text }) => {
 
   return (
     <ChakraProvider>
-      <Flex align="center">
+      <Flex align="center" mt={5}>
         <Input placeholder="Search" />
         <IconButton ml={4} icon={<RiSearchLine />} />
         <IconButton ml={4} icon={<RiNotification2Line />} />
       </Flex>
-      <Heading mt={5} mb={5}>My TR8s</Heading>
+      <Heading mt={5} mb={5} textAlign="left">My TR8s</Heading>
       <Flex direction="row" flexWrap="wrap" justify="space-between">
       <Box position="relative">
         <Box
           position="relative"
-          w="300px"
+          w="400px"
           h="300px" 
-          border="black"
+          border="2px solid black"
+          ml={10}
         >
-          <Image src={image1} alt="" w="90%" h="100%" objectFit="cover" />
+          <Image src={image1} alt="" w="100%" h="100%" objectFit="cover" />
           <Box position="absolute" top={0} right={0}>
             <Box bg="white" p={1} borderRadius="md">
               ID: 200495
@@ -49,7 +50,7 @@ const DashboardComponent = ({ imageSrc, id, text }) => {
             <IconButton icon={<AiFillStar />} onClick={handleLike} />
           </Box>
         </Box>
-        <Box mt={2} w="300px">
+        <Box mt={2} w="400px">
           <Text>Property Mogul</Text>
           <Text>08.10.2023</Text>
           <Text>Prestige Real Estate Institute</Text>
@@ -63,11 +64,11 @@ const DashboardComponent = ({ imageSrc, id, text }) => {
     <Box position="relative">
         <Box
           position="relative"
-          w="300px"
+          w="400px"
           h="300px" 
-          border="black"
+          border="2px solid black"
         >
-          <Image src={image2} alt="" w="90%" h="100%" objectFit="cover" />
+          <Image src={image2} alt="" w="100%" h="100%" objectFit="cover" />
           <Box position="absolute" top={0} right={0}>
             <Box bg="white" p={1} borderRadius="md">
               ID: 200495
@@ -75,7 +76,7 @@ const DashboardComponent = ({ imageSrc, id, text }) => {
             <IconButton icon={<AiFillStar />} onClick={handleLike} />
           </Box>
         </Box>
-        <Box mt={2} w="300px">
+        <Box mt={2} w="400px">
           <Text>Distinguished Scholar</Text>
           <Text>02.04.2023</Text>
           <Text>Quantum University</Text>
@@ -89,11 +90,12 @@ const DashboardComponent = ({ imageSrc, id, text }) => {
     <Box position="relative">
         <Box
           position="relative"
-          w="300px"
+          w="400px"
           h="300px" 
-          border="black"
+          border="2px solid black"
+          mr={10}
         >
-          <Image src={image3} alt="" w="90%" h="100%" objectFit="cover" />
+          <Image src={image3} alt="" w="100%" h="100%" objectFit="cover" />
           <Box position="absolute" top={0} right={0}>
             <Box bg="white" p={1} borderRadius="md">
               ID: 200495
@@ -101,7 +103,7 @@ const DashboardComponent = ({ imageSrc, id, text }) => {
             <IconButton icon={<AiFillStar />} onClick={handleLike} />
           </Box>
         </Box>
-        <Box mt={2} w="300px">
+        <Box mt={2} w="400px">
           <Text>Cybersecurity Guru</Text>
           <Text>10.12.2023</Text>
           <Text>SecureTech Academy</Text>
