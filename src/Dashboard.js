@@ -16,6 +16,7 @@ import { AiOutlineDashboard, AiFillStar, AiOutlineHistory, AiOutlineSetting } fr
 import { RiWallet3Line, RiLogoutBoxRLine, RiNotification2Line, RiSearchLine } from 'react-icons/ri';
 import { FaRegUserCircle } from 'react-icons/fa';
 import DashboardComponent from './DashboardComponent';
+import CreateTR8 from './CreateTR8';
 
 const Dashboard = () => {
   
@@ -41,18 +42,17 @@ const Dashboard = () => {
     <ChakraProvider>
     <Flex>
       <VStack p={4} bg="gray.100">
-      <Box bg="blue.500" w="250px" p={4} color="white" >
+      <Box w="250px" p={4} color="white" height="90vh" >
         <Avatar size="lg" icon={<FaRegUserCircle />} />
-        <Text>Name</Text>
+        <Text textColor="black">Jane Doe</Text>
+        <Text textColor="black"> Member</Text>
         <Flex direction="column" mt={6}>
             <Flex align="center">
             <IconButton icon={<AiOutlineDashboard />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("Dashboard")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%" 
             >
@@ -62,11 +62,9 @@ const Dashboard = () => {
             <Flex align="center">
             <IconButton icon={<AiFillStar />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("CreateaTR8")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%"
             >
@@ -76,25 +74,22 @@ const Dashboard = () => {
             <Flex align="center">
             <IconButton icon={<AiFillStar />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("Favorites")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%"
             >
               Favorites
             </Button>
             </Flex>
+            <Text textColor="black" textAlign="left">Account</Text>
             <Flex align="center">
             <IconButton icon={<AiFillStar />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("MyTR8s")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%"
             >
@@ -104,11 +99,9 @@ const Dashboard = () => {
             <Flex align="center">
             <IconButton icon={<RiWallet3Line />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("Wallet")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%"
             >
@@ -118,11 +111,9 @@ const Dashboard = () => {
             <Flex align="center">
             <IconButton icon={< AiOutlineHistory />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("History")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%"
             >
@@ -132,11 +123,9 @@ const Dashboard = () => {
             <Flex align="center">
             <IconButton icon={<AiOutlineSetting />} />
             <Button
-              colorScheme="blue"
               size="lg"
               mb={2}
               onClick={() => handleButtonClick("Settings")}
-              _hover={{ bg: "blue.600" }}
               justifyContent="start" 
               w="100%"
             >
@@ -153,7 +142,7 @@ const Dashboard = () => {
         
         <Box flex="1" p={4}>
           {showDashboard && <DashboardComponent />}
-          {showCreateaTR8 && <DashboardComponent />}
+          {showCreateaTR8 && <CreateTR8 />}
           {showFavorites && <DashboardComponent />}
           {showMyTR8s && <DashboardComponent />}
           {showWallet && <DashboardComponent />}
